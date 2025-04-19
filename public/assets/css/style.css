@@ -64,6 +64,9 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
+    font-family: 'NeueEinstellung', sans-serif;
+
 }
 
 hr {
@@ -90,7 +93,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -7040,9 +7043,11 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 6rem !important;
   padding-bottom: 3rem !important;
 }
+
+
 
 .pt-0 {
   padding-top: 0 !important;
@@ -10761,13 +10766,14 @@ textarea.form-control-lg {
   padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: #fff;
+  border: 0.1rem solid #0F5A94 !important;
+  background-color: #4F959D;
   display: block;
+  color: #fff;
 }
 .btn-rounded span {
   position: absolute;
-  background-color: #9926f0;
+  background-color: #98D2C0;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -10782,7 +10788,8 @@ textarea.form-control-lg {
 }
 .btn-rounded:hover {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
-  color: #fff;
+  background:#fff;
+  color: #0F5A94;
 }
 .btn-rounded:hover span {
   background-color: rgba(0, 0, 0, 0.6);
@@ -10863,10 +10870,15 @@ textarea.form-control-lg {
 
 .gradient {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: #0F5A94;
 }
 
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: #0F5A94;
+  
+  /* background-image: url("https://www.capgemini.com/wp-content/uploads/2025/03/Reindustrialization-of-Europe-and-US-2025-web-banner.jpg");
+  height:100vh; */
 }
 .menu li {
   padding: 0 0.7rem;
@@ -10882,10 +10894,12 @@ textarea.form-control-lg {
 }
 
 .intro-section {
-  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  /* background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95)); */
+  background: #0F5A94 !important;
   padding: 10rem 0 0 0;
   width: 100%;
   height: 100%;
+  background:#000;
 }
 
 .intros .video-box {
@@ -10969,6 +10983,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 0;
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  background: #0F5A94;
 }
 .testimonials__card {
   background-color: rgba(255, 255, 255, 0.8);

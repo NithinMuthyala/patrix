@@ -1,12 +1,12 @@
 
-
+import Link from "next/link";
 
 const Navbar = () => {
     return <nav className="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div className="container">
-      <a className="navbar-brand" href="">
-        <img src="images/logo.png" alt="logo image" />
-      </a>
+      <Link className="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="logo image" />
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -24,34 +24,25 @@ const Navbar = () => {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="index.html">
+            <Link className="nav-link active" aria-current="page" href ="/">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#services">
+            <Link className="nav-link" href="/services">
               Services
-            </a>
+            </Link>
+          </li>
+         
+          <li className="nav-item">
+            <Link className="nav-link" href="/contact-us">
+              Contact
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#testimonials">
-              Testimonials
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#faq">
-              faq
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#portfolio">
-              portfolio
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              contact
-            </a>
+            <Link className="nav-link" href="/about-us">
+              About Us
+            </Link>
           </li>
         </ul>
         <button type="button" className="rounded-pill btn-rounded">
