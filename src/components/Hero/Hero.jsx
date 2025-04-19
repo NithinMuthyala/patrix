@@ -1,5 +1,5 @@
-
-
+"use client"
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Hero = () => {
@@ -9,10 +9,30 @@ const Hero = () => {
         {/* START THE CONTENT FOR THE INTRO  */}
         <div className="col-md-6 intros text-start">
           <h1 className="display-2">
-            <span className="display-2--intro">Hey!, I'm Patrick</span>
+            <span className="display-2--intro">
+          
+            <Typewriter
+              words={['Welcome to Nexel Data', 'Your Digital Transformation Partner',"Empowering Innovation"]}
+              loop={0}
+              cursor={false}
+              cursorStyle='_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+            </span>
             <span className="display-2--description lh-base">
-              this is a multi-purpose responsive layout created with bootstrap v5.
-              (here your can place your description text)
+            <Typewriter
+             words= {[
+                " We blend creativity with technology to build exceptional digital experiences. Whether it’s product design, enterprise software, or data security — we’ve got you covered."
+              ]}
+              loop={0}
+              cursor={false}
+              cursorStyle='_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
             </span>
           </h1>
           <button type="button" className="rounded-pill btn-rounded">

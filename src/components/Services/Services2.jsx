@@ -97,13 +97,13 @@ const Services2 = () => {
   return (
     <div style={containerStyle}>
       {cardData.map((card, index) => (
-        <Tilt
+        <div
           key={index}
-          glareEnable={true}
-          glareMaxOpacity={0.2}
-          scale={1.05}
-          tiltMaxAngleX={15}
-          tiltMaxAngleY={15}
+          // glareEnable={true}
+          // glareMaxOpacity={0.2}
+          // scale={1.05}
+          // tiltMaxAngleX={15}
+          // tiltMaxAngleY={15}
           style={cardStyle}
         >
           <img src={card.image} alt={card.title} style={imageStyle} />
@@ -111,7 +111,7 @@ const Services2 = () => {
             <h2 style={titleStyle}>{card.title}</h2>
             <p style={descStyle}>{card.description}</p>
           </div>
-        </Tilt>
+        </div>
       ))}
     </div>
   );
