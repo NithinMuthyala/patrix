@@ -95,6 +95,9 @@ const Services2 = () => {
   };
 
   return (
+    <>
+      <h1 style={{textAlign:"center"}}>Our Services</h1>
+
     <div style={containerStyle}>
       {cardData.map((card, index) => (
         <div
@@ -114,6 +117,7 @@ const Services2 = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ const Navbar = () => {
     return <nav className="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div className="container">
       <Link className="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="logo image" />
+        <img src="/images/nexel_logo.png" alt="logo image" style = {{width:"150px"}} />
       </Link>
       <button
         className="navbar-toggler"

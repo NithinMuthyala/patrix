@@ -21,6 +21,7 @@ const Hero = () => {
               delaySpeed={1000}
             />
             </span>
+            <div>
             <span className="display-2--description lh-base">
             <Typewriter
              words= {[
@@ -34,6 +35,7 @@ const Hero = () => {
               delaySpeed={1000}
             />
             </span>
+            </div>
           </h1>
           <button type="button" className="rounded-pill btn-rounded">
             Get in Touch
@@ -46,11 +48,11 @@ const Hero = () => {
         <div className="col-md-6 intros text-end">
           <div className="video-box">
             <img
-              src="images/arts/intro-section-illustration.png"
+              src="images/3.png"
               alt="video illutration"
               className="img-fluid"
             />
-            <a
+            {/* <a
               href="#"
               className="glightbox position-absolute top-50 start-50 translate-middle"
             >
@@ -59,7 +61,7 @@ const Hero = () => {
               </span>
               <span className="border-animation border-animation--border-1" />
               <span className="border-animation border-animation--border-2" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

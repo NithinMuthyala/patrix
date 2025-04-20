@@ -1,7 +1,7 @@
 
 const Banner = ({ name = "Test" }) => {
 
-  const image = "/images/Banners.jpg"
+  const image = "/images/Banners_nit.gif"
   return (
     <div >
       <div
