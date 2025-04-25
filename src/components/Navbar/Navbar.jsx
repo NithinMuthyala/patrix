@@ -1,7 +1,23 @@
 
+"use client"
 import Link from "next/link";
+import { useEffect,useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const [showMenu , setShowMenu] = useState(false);
+  const pathName = usePathname()
+  
+  const handleShowBar = () => {
+    setShowMenu((prev) => !prev)
+  }
+
+  useEffect(() => {
+    if(showMenu){
+      setShowMenu(false)
+    }
+  },[pathName])
+
     return <nav className="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div className="container">
       <Link className="navbar-brand" href="/">
@@ -15,11 +31,12 @@ const Navbar = () => {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={handleShowBar}
       >
         <span className="navbar-toggler-icon" />
       </button>
       <div
-        className="collapse navbar-collapse justify-content-end"
+        className={`collapse navbar-collapse justify-content-end ${showMenu ? "show" : ""}`}
         id="navbarNav"
       >
         <ul className="navbar-nav">

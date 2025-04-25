@@ -1,4 +1,5 @@
 "use client"
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 
@@ -52,6 +53,8 @@ const cardData = [
 
 
 const Services2 = () => {
+  const pathname = usePathname()
+
   const containerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
@@ -93,10 +96,11 @@ const Services2 = () => {
     fontSize: '0.95rem',
     opacity: 0.85
   };
+  console.log(pathname , "pathname")
 
   return (
     <>
-      <h1 style={{textAlign:"center"}}>Our Services</h1>
+     {!pathname.includes("services") && <h1 style={{textAlign:"center"}}>Our Services</h1>}
 
     <div style={containerStyle}>
       {cardData.map((card, index) => (
