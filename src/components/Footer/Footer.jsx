@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -12,21 +12,21 @@ const Footer = () => {
             connect with us on social media
           </div>
           <div className="col-lg-7 col-md-6">
-            <a href="#">
+            <Link href="#">
               <i className="fab fa-facebook" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <i className="fab fa-twitter" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <i className="fab fa-github" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <i className="fab fa-linkedin" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <i className="fab fa-instagram" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -52,16 +52,16 @@ const Footer = () => {
           />
           <ul className="list-inline campany-list">
             <li>
-              <a href="#">Home </a>
+              <Link href="/">Home </Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link href="/services">Services</Link>
             </li>
+            {/* <li>
+              <Link href="#">Clients</Link>
+            </li> */}
             <li>
-              <a href="#">Clients</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
+              <Link href="/about-us">About Us</Link>
             </li>
           </ul>
         </div>
@@ -73,13 +73,13 @@ const Footer = () => {
           />
           <ul className="list-inline campany-list">
           <li>
-              <a href="#"> About us</a>
+              <Link href="/about-us"> About us</Link>
             </li>
             <li>
-              <a href="#"> Terms and Conditions</a>
+              <Link href="/terms-and-conditions"> Terms and Conditions</Link>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </li>
            
           </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
           />
           <ul className="list-inline campany-list">
             <li>
-              <a href="#">Contact Us</a>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
       
           </ul>

@@ -1,6 +1,9 @@
+import Banner from "../Banner/Banner";
+
 const PrivacyPolicy = () => {
     return (
-      <div className="m-5 py-5">
+      <>
+      <div className="m-5 py-1">
         <section>
           <h1 >Privacy Policy for Nexel Data</h1>
           <p>
@@ -99,7 +102,7 @@ const PrivacyPolicy = () => {
             review the policy regularly to stay informed of any changes.
           </p>
         </section>
-      </div>
+      </div></>
     );
   };
   

@@ -61,13 +61,18 @@ const Navbar = () => {
               About Us
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" href="/about-us">
+              Our Team
+            </Link>
+          </li>
         </ul>
-        <button type="button" className="rounded-pill btn-rounded">
+        {/* <button type="button" className="rounded-pill btn-rounded">
           +1 728365413
           <span>
             <i className="fas fa-phone-alt" />
           </span>
-        </button>
+        </button> */}
       </div>
     </div>
   </nav>
