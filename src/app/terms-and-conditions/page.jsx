@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner/Banner";
-import TermsAndConditions from "@/components/TermsAndConditions/TermsandConditions";
+import TermsAndConditions from "@/components/TermsAndConditions/TermsAndConditions";
 
 
 
